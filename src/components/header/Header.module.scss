@@ -1,0 +1,29 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&__phone {
+		margin-right: 85px;
+		p:nth-child(2) {
+			font-weight: 400;
+			line-height: 20px;
+			color: #f7ab42;
+		}
+	}
+	&__email {
+		margin-right: 91px;
+		p:nth-child(2) {
+			padding-top: 3px;
+			font-weight: 400;
+			line-height: 20px;
+			color: #757c82;
+		}
+	}
+	&__button > Button:hover {
+		background: #f7ab42;
+	}
+}
+
+.header > div:nth-child(2) {
+	display: flex;
+}
