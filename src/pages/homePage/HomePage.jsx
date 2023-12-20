@@ -1,13 +1,12 @@
 import React from 'react'
 import css from './HomePage.module.scss'
-
-
+import Hero from '../../components/hero/Hero'
 
 const HeroPage = () => {
 	return (
-		<div className='container'>
-			
-		</div>
+			<div>
+				<Hero />
+			</div>
 	)
 }
 

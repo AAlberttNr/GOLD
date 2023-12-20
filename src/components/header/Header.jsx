@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 // SVG
 
 import Logo from '../../assets/svg/Logo.svg'
+import CartIcon from '../../assets/svg/Cart.svg'
 
 //
 
@@ -35,8 +36,10 @@ const Header = () => {
 		<>
 			<div className='container'>
 				<div className={css.header}>
-					<div>
-						<img src={Logo} alt='Logo' />
+					<div className={css.header__logo}>
+						<Link to='/'>
+							<img src={Logo} alt='Logo' />
+						</Link>
 					</div>
 
 					<div>
@@ -66,7 +69,7 @@ const Header = () => {
 						</nav>
 						<div className={css.cartDiv}>
 							<p>
-								<img src='' alt='cart icon' />
+								<img src={CartIcon} alt='cart icon' />
 							</p>
 							<p>В Корзине 2 товара</p>
 						</div>

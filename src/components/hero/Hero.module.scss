@@ -1,0 +1,23 @@
+.heroBg {
+  background: linear-gradient(180deg, #FFF 0%, #F5F7F9 100%);
+}
+
+.hero {
+  display: flex;
+	&__image {
+      display: flex;
+      align-items: center;
+		&_one {
+      width: 467px;
+      height: 611px;
+      // border-radius: 48% 48% 0% 0%;
+      // background-image: url('../../assets/img/HeroImg.png');
+		}
+    &_two {
+      margin-left: -100px;
+    }
+	}
+	&__text {
+
+	}
+}
