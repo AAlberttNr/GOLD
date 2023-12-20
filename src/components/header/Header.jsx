@@ -22,7 +22,7 @@ const menu = [
 	},
 	{
 		title: 'О Компании',
-		patch: 'about-company',
+		patch: 'about',
 	},
 	{
 		title: 'Контакты',

@@ -9,8 +9,30 @@ import Logo from '../../assets/svg/Logo.svg'
 // Componets
 
 import Button from '../UI/Button/Button'
+import { Link } from 'react-router-dom'
 
 /// ---------------------------------------------------
+
+
+const menu = [
+	{
+		title: 'Главная',
+		patch: '/',
+	},
+	{
+		title: 'Каталог',
+		patch: 'catalog',
+	},
+	{
+		title: 'О Компании',
+		patch: 'about',
+	},
+	{
+		title: 'Контакты',
+		patch: 'contacts',
+	},
+]
+
 const Footer = () => {
 	return (
 		<footer className={css.Footer}>
@@ -20,10 +42,9 @@ const Footer = () => {
 						<img src={Logo} alt='Logo' />
 					</div>
 					<ol>
-						<li>Главная</li>
-						<li>Каталог</li>
-						<li>О компании</li>
-						<li>Контакты</li>
+						{menu.map(({ title, patch }) => (
+							<Link to={patch}>{title}</Link>
+						))}
 					</ol>
 					<div className={css.footer__phone}>
 						<p>8 800 111-11-11</p>
