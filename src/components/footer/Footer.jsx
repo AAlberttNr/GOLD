@@ -13,7 +13,6 @@ import { Link } from 'react-router-dom'
 
 /// ---------------------------------------------------
 
-
 const menu = [
 	{
 		title: 'Главная',
@@ -57,7 +56,7 @@ const Footer = () => {
 				<div className={css.footer__line}></div>
 				<div className={css.footer__under}>
 					<p>© Bassco 2022</p>
-					<p>Политика конфиденциальности</p>
+					<p style={{ cursor: 'pointer' }}>Политика конфиденциальности</p>
 				</div>
 			</div>
 		</footer>
